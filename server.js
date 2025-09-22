@@ -81,11 +81,11 @@ app.post('/login', async (req, res) =>{
         if (!info){
             //Password incorrect
             console.log("Password incorrect");
-            res.json({message: "Password incorrect", success: false, status: "tryAgain"});
+            return res.json({message: "Password incorrect", success: false, status: "tryAgain"});
         }
         else{
             console.log("Welcome user:", username, password);
-            res.json({message: "Login", success: true, status: "allGood"});
+            return res.json({message: "Login", success: true, status: "allGood"});
         }
 
     }
@@ -96,8 +96,6 @@ app.post('/login', async (req, res) =>{
         await col.insertOne({username: username, password: password});
     }
     
-
-    res.redirect("/main.html");
 });
 
 app.patch('/change', async (req, res) =>{
