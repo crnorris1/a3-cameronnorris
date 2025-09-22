@@ -7,48 +7,53 @@
     <script src="js/main.js"></script>
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     
     <!-- get rid of favicon error -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   </head>
   <body>
 
-    <button id="view" class = "view">View Logged Films</button>
+    <div class ="window">
 
-    <h1>Movie Log</h1>
-    
-    <form>
-      
-      <label for="title">Movie Title:</label>
-      <input type = "text" id="title" name="title">
-      <br>
-    
-      <label for="thoughs">Brief thoughts:</label>
-      <input type = "text" id="thoughts" name="thoughts">
-      <br>
-      <label for="date">Date Watched:</label>
-      <input type = "date" id = "date" class = "date" name = "date">
-      <br>
-      <label for="rating">Your rating:</label>
-      
-      <div class ="rating">
-        <input type="radio" id="star5" name = "rating" value="5" onclick="rate(5)">
-        <label for="star5">★</label>
-
-        <input type="radio" id="star4" name = "rating" value="4" onclick="rate(4)">
-        <label for="star4">★</label>
-
-        <input type="radio" id="star3" name = "rating" value="3" onclick="rate(3)">
-        <label for="star3">★</label>
-
-        <input type="radio" id="star2" name = "rating" value="2" onclick="rate(2)">
-        <label for="star2">★</label>
-
-        <input type="radio" id="star1" name = "rating" value="1" onclick="rate(1)">
-        <label for="star1">★</label>
+      <button id="view" class = "btn">View Logged Films</button>
+      <div class = "title-bar">
+        <h1 class = "title">Movie Log</h1>
       </div>
-      <br><br>
-      <button id="submit" class = "nonlog">Submit</button>
+      
+      <form>
+        
+        <label for="title">Movie Title:</label>
+        <input type = "text" id="title" name="title">
+        <br>
+      
+        <label for="thoughs">Brief thoughts:</label>
+        <input type = "text" id="thoughts" name="thoughts">
+        <br>
+        <label for="date">Date Watched:</label>
+        <input type = "date" id = "date" class = "date" name = "date">
+        <br>
+        <label for="rating">Your rating:</label>
+        
+        <div class ="rating">
+          <input type="radio" id="star5" name = "rating" value="5" onclick="rate(5)">
+          <label for="star5">★</label>
 
+          <input type="radio" id="star4" name = "rating" value="4" onclick="rate(4)">
+          <label for="star4">★</label>
+
+          <input type="radio" id="star3" name = "rating" value="3" onclick="rate(3)">
+          <label for="star3">★</label>
+
+          <input type="radio" id="star2" name = "rating" value="2" onclick="rate(2)">
+          <label for="star2">★</label>
+
+          <input type="radio" id="star1" name = "rating" value="1" onclick="rate(1)">
+          <label for="star1">★</label>
+        </div>
+        <br><br>
+        <button id="submit" class = "btn">Submit</button>
+        <br>
+      </div>
     </form>
   </body>

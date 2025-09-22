@@ -81,18 +81,18 @@ app.post('/login', async (req, res) =>{
         if (!info){
             //Password incorrect
             console.log("Password incorrect");
-            return res.json({message: "Password incorrect", success: false, status: "tryAgain"});
+            return res.json({message: "Password incorrect, try again.", success: false, status: "tryAgain"});
         }
         else{
             console.log("Welcome user:", username, password);
-            return res.json({message: "Login", success: true, status: "allGood"});
+            return res.json({message: "Success!", success: true, status: "allGood"});
         }
 
     }
     //Username not in database, create new username and password
     else{
         console.log("Created new user:", username, password);
-        res.json({message: "Please re-log in", success: false, status: "newUser"});
+        res.json({message: "Created new user with those credentials. Please re-log in!", success: false, status: "newUser"});
         await col.insertOne({username: username, password: password});
     }
     

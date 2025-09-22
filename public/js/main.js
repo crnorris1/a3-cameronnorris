@@ -51,14 +51,12 @@ const login = async function(event){
         const pass = document.getElementById("password");
         pass.value = "";
 
-        if (data.status == "newUser"){
-            alert("New user created with those credentials!");
-        }
+        
 
     }
 
     if (data.success == true){
-        alert("Login successful.");
+        //alert("Login successful.");
         //window.location.href = "main.html";
         window.location.replace("main.html");
     }
@@ -120,7 +118,8 @@ const displayFilms = async function(event){
         let diffDays = Math.floor(diffMs / (1000 * 60 * 60 *24));
 
         content += diffDays + "<td>";
-        content += `<button onclick="deleteFilm('${data[i].title}')">X</button>`;
+        content += `<button class='btn' onclick="deleteFilm(\"${data[i].title}\")">Delete</button>`;
+
         content += "</tr>";
 
     }
