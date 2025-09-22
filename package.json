@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/crnorris1/a3-cameronnorris-a25/issues"
   },
-  "homepage": "https://github.com/crnorris1/a3-cameronnorris-a25#readme"
+  "homepage": "https://github.com/crnorris1/a3-cameronnorris-a25#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
 }
