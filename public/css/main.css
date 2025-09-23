@@ -3,7 +3,7 @@ h1, p{
     justify-content: center;
     align-items: center;
     height: 10vh;
-
+    
 }
 
 h4{
@@ -23,15 +23,16 @@ label{
 table, th{
     height: 50px;
     width: 50px;
-    border-radius: 50px;
-    border: 1ps solid #018a8a;
-    background-color: white;
+    border-radius: 10px;
+    border: 1ps solid #a0a0a0;
+    background-color: rgb(201, 201, 201);
 
     border:2px solid rgb(255, 255, 255);
-    padding: 10px;
+    padding: 30px;
     
     margin-left: auto;
     margin-right: auto;
+
 }
 
 td{
@@ -57,11 +58,8 @@ td{
     text-align: right;
 }
 
-.rating input[type="radio"] {
-    position: absolute;   /* remove from flow */
-    opacity: 0;           /* invisible but still clickable */
-    width: 0;
-    height: 0;
+.center{
+    text-align: center;
 }
 
 input{
@@ -131,4 +129,11 @@ input{
 .rating label:hover,
 .rating label:hover ~ label{
     color: gold;
+}
+
+.rating input[type="radio"]{
+    display: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }

@@ -118,7 +118,7 @@ const displayFilms = async function(event){
         let diffDays = Math.floor(diffMs / (1000 * 60 * 60 *24));
 
         content += diffDays + "<td>";
-        content += `<button class='btn' onclick="deleteFilm(\"${data[i].title}\")">Delete</button>`;
+        content += `<button class="btn" onclick="deleteFilm('${data[i].title.replace(/'/g, "\\'")}')">Delete</button>`;
 
         content += "</tr>";
 
@@ -146,6 +146,10 @@ const change = async function(event){
 
     displayFilms();
  
+}
+
+const back = async function(event){
+    window.location.href = "main.html";
 }
 
 
@@ -176,6 +180,12 @@ window.onload = function(){
     const changeButton = document.querySelector("#change");
     if (changeButton){
         changeButton.addEventListener("click", change);
+    }
+
+    const backButton = document.querySelector("#back");
+    if (backButton){
+        //backButton.addEventListener("click", window.location.href = "logs.html") ;
+        backButton.onclick = back;
     }
 }
 
