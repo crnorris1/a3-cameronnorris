@@ -59,3 +59,11 @@ Alignment
 
 Proximity
 	Lastly, I used proximity to organize the visual information on the page by comparing my site to other sites that I enjoy using. I viewed minimalistic sites with similar functions to see how they grouped visual aspects. I then made adjustments and tried to use the page from the perspective of a user who has never used the site before. I took quick glances at the information and saw which aspects needed grouping. On the movie logging page, the text boxes are spaced together in the order that one would think of the answers in, and placed the submit button near the stars so that the user would be able to submit their answers quickly after entering them. I placed the “Logged films” and “Back” buttons at the top of the page, and the “Submit” buttons towards the bottom, as that is both what made the most sense to me, and what other websites frequently do. The “Logged films” and “Back” buttons navigate to different pages, and just like internet browsers do with their back and tab buttons, I chose to place them higher. The submit buttons are like conclusions to the information entering, so I chose to put them towards the bottom of the page.
+
+
+AI (and outside sources) Use:
+I used AI in this assignment (along with outside sources) to fully understand how Mongo works, and how express communicates with it. I was briefly having a bug where my site on render would not process some of the CSS, and before going to office hours, I used AI to help diagnose why it was doing that. The problem went away by itself thankfully. Some of the more helpful sources that I used:
+
+https://www.geeksforgeeks.org/mongodb/how-to-connect-node-js-to-a-mongodb-database/
+https://studio3t.com/knowledge-base/articles/connect-to-mongodb/
+https://www.simplilearn.com/tutorials/css-tutorial/css-framework
