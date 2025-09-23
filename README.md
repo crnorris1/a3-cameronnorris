@@ -15,6 +15,9 @@ Include a very brief summary of your project here. Images are encouraged, along 
 - **Tech Achievement 1**: I used multiple forms of input including a star rating system in which the user can rate a movie visually with stars
 - **Tech Achievement 2**: I scored 90% or higher in each of the categories in each of my pages using Google Lighthouse
 
+<img width="1557" height="732" alt="Screenshot 2025-09-23 120630" src="https://github.com/user-attachments/assets/f4bfb922-1ccc-424b-b177-c6e781c63825" />
+<img width="1548" height="750" alt="Screenshot 2025-09-23 120639" src="https://github.com/user-attachments/assets/104c6094-b9bc-4adc-a241-cfebb6a11934" />
+<img width="1526" height="732" alt="Screenshot 2025-09-23 120645" src="https://github.com/user-attachments/assets/f02314f5-3bae-4266-962b-231dffc2dad1" />
 
 
 - **Tech Achievement 3**: I display all the movies logged by a particular user, not all of the data in the database.
